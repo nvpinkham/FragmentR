@@ -1,0 +1,11 @@
+Package: fragmentR
+Type: Package
+Title: DNA Fragment Analysis
+Version: 0.1.0
+Author:  N. V. Pinkham 
+Maintainer:  N. V. Pinkham <biopinkham@gmail.com>
+Imports: MLPA, bayestestR, vegan, permute, and lattice
+Description: FragmentR is an R tool for DNA fragment analysis, developed and maintained by the Walk Lab at MSU Bozeman.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
