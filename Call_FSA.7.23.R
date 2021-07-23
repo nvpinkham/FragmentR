@@ -1,7 +1,7 @@
 
 
 getwd()#[1] "/Users/nickpinkham/Desktop/Promega_Validation"
-source("R/frag_functions.7.23.R")
+source("frag_functions.7.23.R")
 
 rox.ladder <- c(50,  75, 100, 125, 150, 200, 250, 300, 350, 400, 450, 475, 500,
                 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000)
