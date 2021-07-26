@@ -1,13 +1,16 @@
 
 
 getwd()#[1] "/Users/nickpinkham/Desktop/Promega_Validation"
-source("frag_functions.7.23.R")
+options(warn=-1)
+
+source("R/frag_functions.7.26.R")
+source("frag_functions.7.26.R")
 
 rox.ladder <- c(50,  75, 100, 125, 150, 200, 250, 300, 350, 400, 450, 475, 500,
                 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000)
 
 # Restore the object
-cd.db <- readRDS(file = "Cdiff_DB_list.5.4.rds")
+cd.db <- readRDS(file = "Cdiff_DB_list.7.26.rds")
 
 p1 <- list.files("Files_to_analyze/",
                  recursive = T, full.names = T, pattern = ".fsa")
@@ -38,7 +41,7 @@ for(i in 1 : nrow(results)){
 
   print(i)
 
-  i.res <- find.match2(file.query = p1[i], ladder = rox.ladder, database = cd.db)
+  i.res <- find.match3(file.query = p1[i], ladder = rox.ladder, database = cd.db)
 
 
   if(i.res[1] !=  "no match found"){
