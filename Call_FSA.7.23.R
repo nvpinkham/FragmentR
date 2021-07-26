@@ -21,6 +21,7 @@ ids <- sapply(ids, "[[", 3)
 jpegs <- gsub("fsa", "jpeg", ids)
 
 results.dir <- paste("Results", Sys.time())
+results.dir <- gsub(" |[:]", "_", results.dir)
 dir.create(results.dir)
 
 results <-  as.data.frame(matrix(ncol = 7, nrow = length(p1)))
